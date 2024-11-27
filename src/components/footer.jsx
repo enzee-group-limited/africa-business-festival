@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-bgColor to-[#4F0945] h-72 w-full rounded-t-3xl p-6 text-fontColors">
+    <div className="bg-gradient-to-r from-bgColor to-[#4F0945] h-72 w-full rounded-t-3xl p-6 text-fontColors mt-10">
       {/* Grid Layout */}
       <div className="grid grid-cols-3 gap-8 h-full">
         {/* Column 1: Logo and Copyright */}

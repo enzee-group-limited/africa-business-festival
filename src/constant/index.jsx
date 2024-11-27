@@ -10,28 +10,12 @@ const K = {
     },
     {
       name: 'Events',
-      path: '#',
-      dropdown: [
-        {
-          name: 'Event One',
-          path: '/products/product-one',
-        },
-        {
-          name: 'Event Two',
-          path: '/products/product-two',
-        },
-        {
-          name: 'Event Three',
-          path: '/products/product-three',
-        },
-      ],
+      path: '/events',
     },
-
     {
       name: 'Contact',
-      path: '/contact',
+      path: '/contact-me',
     },
   ],
 };
-
 export default K;
