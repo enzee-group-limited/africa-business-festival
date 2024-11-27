@@ -16,3 +16,40 @@
     @apply left-5 top-1/2 transform -translate-y-1/2;
   }
   
+  .bg-img {
+    position: relative;
+    height: 70vh;
+    width: auto;
+}
+
+.bg-img::after {
+    content: "";
+    background-image: url(./assets/images/whyusbg.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* opacity: 0.8; Adjust opacity */
+    background-color: #55085a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place the background behind the content */
+}
+
+.custom-bullet {
+  background-color: rgba(250, 249, 248, 0.5);
+  width: 20px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.custom-bullet.swiper-pagination-bullet-active {
+  background-color: white;
+  transform: scale(1.2);
+  opacity: 1;
+}
