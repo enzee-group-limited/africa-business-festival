@@ -1,75 +1,18 @@
-// import React from 'react';
-
-// const Contact = () => {
-//   return (
-//     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-//       <div className="max-w-4xl w-full bg-white shadow-md rounded-lg p-6">
-//         <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">
-//           Contact Us
-//         </h1>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//           {/* Contact Information */}
-//           <div className="space-y-6">
-//             <div>
-//               <h2 className="text-xl font-semibold text-gray-800">Location</h2>
-//               <p className="text-gray-600">123 Main Street, Anytown, USA</p>
-//             </div>
-//             <div>
-//               <h2 className="text-xl font-semibold text-gray-800">Phone</h2>
-//               <p className="text-gray-600">
-//                 <a
-//                   href="tel:+1234567890"
-//                   className="text-blue-500 hover:underline"
-//                 >
-//                   +1 234 567 890
-//                 </a>
-//               </p>
-//             </div>
-//             <div>
-//               <h2 className="text-xl font-semibold text-gray-800">Email</h2>
-//               <p className="text-gray-600">
-//                 <a
-//                   href="mailto:example@domain.com"
-//                   className="text-blue-500 hover:underline"
-//                 >
-//                   example@domain.com
-//                 </a>
-//               </p>
-//             </div>
-//           </div>
-
-//           {/* Map */}
-//           <div>
-//             <h2 className="text-xl font-semibold text-gray-800 mb-4">
-//               Find Us
-//             </h2>
-//             <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-//               <iframe
-//                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509449!2d144.95373631531765!3d-37.81627974228771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778f3d3d9c865f!2s123%20Main%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1631798047456!5m2!1sen!2sus"
-//                 title="Google Maps Location"
-//                 width="100%"
-//                 height="100%"
-//                 frameBorder="0"
-//                 allowFullScreen=""
-//                 aria-hidden="false"
-//                 tabIndex="0"
-//               ></iframe>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Contact;
 import React from 'react';
 
 const Contact = () => {
   return (
     <div className="bg-gradient-to-r from-bgColor to-[#4F0945] text-fontColors">
       <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* Heading */}
+        <div className="text-center font-courgette mb-8">
+          <h2 className="text-[3rem] md:text-4xl font-bold">Get in Touch</h2>
+          <p className="text-lg md:text-xl mt-2 text-gray-500">
+            Reach out to us via phone, email, or visit our office.
+          </p>
+        </div>
+
+        {/* Contact Details Grid */}
         <div className="grid md:grid-cols-3 gap-6 text-center">
           {/* Location */}
           <div>

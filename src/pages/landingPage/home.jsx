@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { homePageImgslide1, homePageImgslide2 } from "../../assets";
-import "../../App.css";
+import React, { useState } from 'react';
+import { homePageImgslide1, homePageImgslide2 } from '../../assets';
+import '../../App.css';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
 
 // Import required modules
-import { Navigation } from "swiper/modules";
-import WhyUsSection from "./whyUs";
-import Partnership from "./partnership";
+import { Navigation } from 'swiper/modules';
+import WhyUsSection from './whyUs';
+import Partnership from './partnership';
 
 const Home = () => {
   const [isSliding, setIsSliding] = useState(false);
@@ -29,8 +29,8 @@ const Home = () => {
         <Swiper
           modules={[Navigation]}
           navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
           }}
           slidesPerView={1}
           loop={true} // Enable looping for continuous sliding
@@ -50,8 +50,8 @@ const Home = () => {
               <div
                 className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ${
                   isSliding
-                    ? "transform -translate-x-full opacity-0"
-                    : "transform translate-x-0 opacity-100"
+                    ? 'transform -translate-x-full opacity-0'
+                    : 'transform translate-x-0 opacity-100'
                 } transition-all duration-500`}
               >
                 <p className="text-white text-7xl font-poppins font-bold text-center">
@@ -66,7 +66,7 @@ const Home = () => {
 
                 <button
                   onClick={() =>
-                    window.open("https://forms.gle/RiymWA5sQaonNrys8")
+                    window.open('https://forms.gle/RiymWA5sQaonNrys8')
                   }
                   type="button"
                   className="text-white bg-gradient-to-br from-bgColor to-fontColors  hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fontColors dark:focus:ring-fontColors font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -90,8 +90,8 @@ const Home = () => {
               <div
                 className={`absolute top-0 left-0 w-full h-full flex justify-center items-center ${
                   isSliding
-                    ? "transform -translate-x-full opacity-0"
-                    : "transform translate-x-0 opacity-100"
+                    ? 'transform -translate-x-full opacity-0'
+                    : 'transform translate-x-0 opacity-100'
                 } transition-all duration-500`}
               >
                 <p className="text-white text-5xl font-bold">
@@ -113,8 +113,7 @@ const Home = () => {
       {/* WHY US SECTION */}
       <WhyUsSection />
       {/* partnership or sponsorship */}
-      <Partnership/>
-    
+      {/* <Partnership/> */}
     </div>
   );
 };
