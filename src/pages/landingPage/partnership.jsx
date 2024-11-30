@@ -5,7 +5,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
-import { homePageImgslide1 } from '../../assets';
+import { flyer, flyer2 } from '../../assets';
 
 const Partnership = () => {
   return (
@@ -44,15 +44,26 @@ const Partnership = () => {
         {Array(8)
           .fill(0)
           .map((_, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative w-full h-[50vh]">
-                <img
-                  src={homePageImgslide1}
-                  alt={`Slide ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
+            <React.Fragment key={index}>
+              <SwiperSlide>
+                <div className="relative w-full h-[50vh]">
+                  <img
+                    src={flyer}
+                    alt={`Flyer ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="relative w-full h-[50vh]">
+                  <img
+                    src={flyer2}
+                    alt={`Flyer 2 ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </SwiperSlide>
+            </React.Fragment>
           ))}
       </Swiper>
 

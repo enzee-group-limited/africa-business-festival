@@ -31,29 +31,23 @@ const WhyUsSection = () => {
         >
           <SwiperSlide>
             <p className="text-white text-center text-lg md:text-2xl font-bold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We Build global competence and strategic thinking with hands-on workshops led by experts.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className="text-white text-center text-lg md:text-2xl font-bold">
+            We offer One-on-one sessions with successful African entrepreneurs to guide your business journey.
 
             </p>
           </SwiperSlide>
           <SwiperSlide>
             <p className="text-white text-center text-lg md:text-2xl font-bold">
-              Fusce a sapien eu purus eleifend viverra.
-              Fusce a sapien eu purus eleifend viverra.
-
+            We Engage with industry leaders during panel discussions and Q&A sessions.
             </p>
           </SwiperSlide>
           <SwiperSlide>
             <p className="text-white text-center text-lg md:text-2xl font-bold">
-            Aenean pulvinar lacus vel vulputate ultricies.
-            Aenean pulvinar lacus vel vulputate ultricies.
-
-            </p>
-          </SwiperSlide>
-          <SwiperSlide>
-            <p className="text-white text-center text-lg md:text-2xl font-bold">
-            Vitae suscipit erat lorem in augue.
-            Vitae suscipit erat lorem in augue.
+            You can join curated networking events tailored to your industry and interests.
 
             </p>
           </SwiperSlide>
