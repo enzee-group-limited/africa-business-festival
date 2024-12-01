@@ -12,9 +12,6 @@ import 'swiper/css';
 import { Navigation, Autoplay } from 'swiper/modules';
 import WhyUsSection from './whyUs';
 
-import Countdown from "./countDown";
-
-
 const Home = () => {
   const [isSliding, setIsSliding] = useState(false);
 
@@ -37,7 +34,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="relative h-[80vh] bg-bgColor">
+      <div className="relative h-[80vh] bg-bgColor font-poppins">
         {/* Swiper Slider as Hero Background */}
         <Swiper
           modules={[Navigation, Autoplay]} // Add Autoplay module
@@ -77,7 +74,6 @@ const Home = () => {
 
                 {/* Call-to-Action Buttons */}
                 <div className="flex flex-col my-10 sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-
                   <button
                     onClick={() => scrollToSection('events')}
                     type="button"
@@ -85,7 +81,6 @@ const Home = () => {
                   >
                     INTERESTED
                   </button>
-
 
                   <button
                     onClick={() => scrollToSection('about')}
@@ -134,37 +129,6 @@ const Home = () => {
                     className="text-white bg-gradient-to-br from-bgColor to-fontColors hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fontColors dark:focus:ring-fontColors font-medium rounded-lg text-sm px-6 py-3 text-center"
                   >
                     VIEW EVENTS SCHEDULE
-                  </button>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-            {/* Slide 3 */}
-            <SwiperSlide>
-            <div
-              className="h-full w-full bg-cover bg-center"
-              style={{
-                backgroundImage: `url(${homePageImgslide2})`,
-              }}
-            >
-              {/* Overlay */}
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
-
-              {/* Text Overlay */}
-              <div
-                className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ${isSliding ? "transform -translate-x-full opacity-0" : "transform translate-x-0 opacity-100"} transition-all duration-500`}
-              >
-                <Countdown/>
-
-                {/* Buttons in Column Layout */}
-                <div className="flex flex-col items-center my-10 space-y-4">
-                <button
-                    onClick={() => scrollToSection('events')}
-                    type="button"
-                    className="text-white bg-gradient-to-br from-bgColor to-fontColors hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fontColors dark:focus:ring-fontColors font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                  >
-                    INTERESTED
                   </button>
                 </div>
               </div>

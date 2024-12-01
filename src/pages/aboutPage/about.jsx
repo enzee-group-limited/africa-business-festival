@@ -130,7 +130,7 @@ import img from '../../assets/images/hero3.jpg';
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-r from-bgColor to-[#4F0945]/80">
+    <div className="bg-gradient-to-r from-bgColor to-[#4F0945]/80 font-poppins">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto font-poppins">
         {/* Left content: Title */}
