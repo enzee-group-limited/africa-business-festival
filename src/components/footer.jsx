@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/images/abf2.png';
 import React from 'react';
 
@@ -16,7 +17,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   Navigation
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -39,7 +40,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   News Letter
                 </h2>
                 {/* Column 3: News Subscription */}
@@ -59,7 +60,7 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   Legal
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -88,7 +89,7 @@ const Footer = () => {
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0 space-x-6">
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/africabusinessfestival"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#5A138A]"
@@ -96,7 +97,7 @@ const Footer = () => {
                 <FaFacebookF className="text-2xl" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/africabizfest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-400"
@@ -104,12 +105,20 @@ const Footer = () => {
                 <FaTwitter className="text-2xl" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/africabusinessfestival"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-pink-400"
               >
                 <FaInstagram className="text-2xl" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/enzee-group-limited"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-700"
+              >
+                <FaLinkedin className="text-2xl" />
               </a>
             </div>
           </div>

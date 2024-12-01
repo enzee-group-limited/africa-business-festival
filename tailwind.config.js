@@ -6,6 +6,7 @@ export default {
       colors: {
         bgColor: '#130514',
         fontColors: '#F5900C',
+        primary: '#4F0945',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
