@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-r from-bgColor to-[#4F0945] text-fontColors">
+    <div className="bg-gradient-to-r from-bgColor to-[#4F0945] text-fontColors font-poppins">
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Heading */}
         <div className="text-center font-courgette mb-8">

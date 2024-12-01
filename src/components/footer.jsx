@@ -5,7 +5,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-bgColor h-auto w-full p-6 text-fontColors">
+    <div className="bg-bgColor h-auto w-full p-6 text-fontColors font-poppins">
       <footer>
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">

@@ -9,7 +9,7 @@ import { flyer, flyer2 } from '../../assets';
 
 const Event = () => {
   return (
-    <div className="my-10 flex flex-col h-auto px-4 sm:px-8 lg:px-16 mx-auto max-w-7xl">
+    <div className="my-10 flex flex-col h-auto px-4 sm:px-8 lg:px-16 mx-auto max-w-7xl font-poppins">
       <h1 className="text-white flex justify-center text-3xl sm:text-[3rem] py-7 font-courgette font-semibold bg-gradient-to-r from-bgColor to-fontColors">
         EVENTS
       </h1>
@@ -107,7 +107,7 @@ const Event = () => {
       <div className="bg-gradient-to-r from-bgColor to-[#4F0945]/80 md:p-10">
         {/* Title and Description */}
         <div className="text-center text-white mb-8">
-          <h2 className="text-4xl font-bold text-fontColors font-courgette mb-4">
+          <h2 className="text-4xl font-bold text-fontColors font-courgette mb-4 pt-3">
             Event Flyers
           </h2>
           <p className="text-lg">

@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const WhyUsSection = () => {
   return (
-    <div className="bg-img flex justify-evenly flex-col md:flex-row m-10 h-60">
+    <div className="bg-img flex justify-evenly flex-col md:flex-row m-10 h-60 font-poppins">
       {/* Left Section */}
       <div className="flex justify-center items-center text-fontColors font-courgette font-extrabold text-4xl md:text-6xl flex-1 p-5">
         WHY US
