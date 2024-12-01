@@ -63,7 +63,7 @@ function App() {
             <Contact />
           </div>
           <Footer />
-          <CountDown targetDate="2024-12-1T08:00:59" />
+          {/* <CountDown targetDate="2024-12-1T08:00:59" /> */}
           {/* where date can be fixed so probs can be passed  */}
         </div>
       ),

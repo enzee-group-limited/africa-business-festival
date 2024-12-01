@@ -8,7 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 // Import required modules
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation,
+  //  Autoplay 
+  } from "swiper/modules";
 import WhyUsSection from "./whyUs";
 import Countdown from "./countDown";
 
@@ -37,17 +39,19 @@ const Home = () => {
       <div className="relative h-[80vh] bg-bgColor">
         {/* Swiper Slider as Hero Background */}
         <Swiper
-          modules={[Navigation, Autoplay]} // Add Autoplay module
+          modules={[Navigation, 
+            // Autoplay
+          ]} // Add Autoplay module
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
           slidesPerView={1}
           loop={true} // Enable looping for continuous sliding
-          autoplay={{
-            delay: 5000, // Time between each slide transition (in ms)
-            disableOnInteraction: false, // Autoplay will continue even after interaction
-          }}
+          // autoplay={{
+          //   delay: 5000, // Time between each slide transition (in ms)
+          //   disableOnInteraction: false, // Autoplay will continue even after interaction
+          // }}
           className="h-full"
           onSlideChange={handleSlideChange} // Listen for slide change
         >
