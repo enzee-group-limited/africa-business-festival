@@ -2,12 +2,12 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-r from-bgColor uppercase  to-[#4F0945] text-fontColors">
+    <div className="bg-gradient-to-r from-bgColor   to-[#4F0945] text-fontColors">
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Heading */}
         <div className="text-center  font-poppins font-extrabold text-4xl mb-8">
           <h2 className="text-[3rem] md:text-4xl py-10 font-bold">Get in Touch</h2>
-          <p className="text-lg md:text-xl mt-2 text-gray-500">
+          <p className=" md:text-xl m-2 font-light text-white">
             Reach out to us through phone, email, or visit our office.
           </p>
         </div>
@@ -39,10 +39,10 @@ const Contact = () => {
                 </svg>
               </span>
             </div>
-            <p className="font-semibold text-lg md:text-2xl">
+            <p className="text-base md:text-xl font-medium ">
               9th Floor, Emporium Building
             </p>
-            <p className="text-base md:text-xl">
+            <p className="text-base md:text-xl font-medium ">
               Movenpick Ambassador Hotel, Independence Avenue
             </p>
           </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                 </svg>
               </span>
             </div>
-            <p className="font-semibold text-lg md:text-2xl">
+            <p className="text-base md:text-xl font-medium ">
               <a href="tel:+233599428555" className="hover:underline">
                 +233 599 428 555
               </a>
@@ -94,7 +94,7 @@ const Contact = () => {
                 </svg>
               </span>
             </div>
-            <p className="font-semibold text-lg md:text-2xl">
+            <p className="text-base md:text-xl font-medium ">
               <a
                 href="mailto: info@africabusinessfestival.com"
                 className="hover:underline"
