@@ -1,5 +1,5 @@
-import homePageImgslide1 from "./images/homebg.jpg"
-import homePageImgslide2 from "./images/slide2.jpg"
+import hero1 from "./images/hero1.jpg"
+import slide2 from "./images/slide2.jpg"
 import flyer from "./images/flyer.jpg"
 import flyer2 from "./images/flyer2.jpg"
 import fbIcon from "./icons/facebook.png"
@@ -9,6 +9,7 @@ import twitter from "./icons/twitter.png"
 
 
 export {
-    homePageImgslide1,homePageImgslide2, flyer,flyer2,
+    hero1,
+    slide2, flyer,flyer2,
     fbIcon,IgIcon,linkedin,twitter,
 }
