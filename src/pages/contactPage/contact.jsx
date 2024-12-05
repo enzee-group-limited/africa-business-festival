@@ -2,11 +2,11 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-r from-bgColor to-[#4F0945] text-fontColors font-poppins">
+    <div className="bg-gradient-to-r from-bgColor uppercase  to-[#4F0945] text-fontColors">
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Heading */}
-        <div className="text-center font-courgette mb-8">
-          <h2 className="text-[3rem] md:text-4xl font-bold">Get in Touch</h2>
+        <div className="text-center  font-poppins font-extrabold text-4xl mb-8">
+          <h2 className="text-[3rem] md:text-4xl py-10 font-bold">Get in Touch</h2>
           <p className="text-lg md:text-xl mt-2 text-gray-500">
             Reach out to us through phone, email, or visit our office.
           </p>
@@ -107,7 +107,7 @@ const Contact = () => {
       </div>
 
       {/* Map Section */}
-      <div className="w-full h-64">
+      {/* <div className="w-full h-64">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.556392973621!2d-0.2039007!3d5.5590716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10208ef5f83b9e8f%3A0x3a8b42079c80d7b6!2sEmporium%20Building%2C%20Accra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1698765432100!5m2!1sen!2sus"
           title="Google Maps Location"
@@ -118,7 +118,7 @@ const Contact = () => {
           aria-hidden="false"
           tabIndex="0"
         ></iframe>
-      </div>
+      </div> */}
     </div>
   );
 };

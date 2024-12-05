@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Courgette&display=swap');
 
 .custom-nav-button {
+<<<<<<< HEAD
+    @apply absolute z-10 w-12 h-12 rounded-full
+     border-2 border-fontColors bg-transparent flex items-center justify-center transition duration-300;
+}
+  
+  .custom-nav-button:hover {
+    @apply bg-fontColors text-black;
+  }
+  
+  .swiper-button-next {
+    @apply right-5 top-1/2 transform -translate-y-1/2;
+  }
+  
+  .swiper-button-prev {
+    @apply left-5 top-1/2 transform -translate-y-1/2;
+  }
+  
+  
+.bg-img {
+  position: relative;
+  height: 70vh;
+  width: auto;}
+=======
   @apply absolute z-10 w-12 h-12 rounded-full border-2 border-fontColors bg-transparent flex items-center justify-center transition duration-300;
 }
 
@@ -21,8 +44,26 @@
   height: 70vh;
   width: auto;
 }
+>>>>>>> 6800382ab44920d6bce2914847269c780424c06e
 
+/* 
 .bg-img::after {
+<<<<<<< HEAD
+    content: "";
+    background-image: url(./assets/images/whyusbg.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8; 
+    background-color: #8F2C8E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+} */
+=======
   content: '';
   /* background-image: url(./assets/images/whyusbg.png); */
   background-position: center center;
@@ -37,6 +78,7 @@
   bottom: 0;
   z-index: -1; /* Place the background behind the content */
 }
+>>>>>>> 6800382ab44920d6bce2914847269c780424c06e
 
 .custom-bullet {
   background-color: rgba(250, 249, 248, 0.5);

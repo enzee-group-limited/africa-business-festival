@@ -43,8 +43,8 @@ function App() {
       element: (
         <div
           style={{
-            minHeight: '100vh',
-            color: 'white',
+            minHeight: "100vh",
+            color: "white",
           }}
         >
           <Navbar activeSection={activeSection} />
@@ -61,6 +61,7 @@ function App() {
             <Contact />
           </div>
           <Footer />
+
         </div>
       ),
     },
