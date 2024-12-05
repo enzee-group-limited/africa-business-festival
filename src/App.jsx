@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Home from "./pages/landingPage/home";
-import About from "./pages/aboutPage/about";
-import Event from "./pages/eventPage/event";
-import Contact from "./pages/contactPage/contact";
-import Footer from "./components/footer";
-import CountDown from "./pages/landingPage/countDown";
+import React, { useEffect, useState } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Home from './pages/landingPage/home';
+import About from './pages/aboutPage/about';
+import Event from './pages/eventPage/event';
+import Contact from './pages/contactPage/contact';
+import Footer from './components/footer';
 
 function App() {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = () => {
-    const sections = ["home", "about", "events", "contact"];
+    const sections = ['home', 'about', 'events', 'contact'];
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
     sections.forEach((section) => {
@@ -32,15 +31,15 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: (
         <div
           style={{
@@ -62,8 +61,7 @@ function App() {
             <Contact />
           </div>
           <Footer />
-          {/* <CountDown targetDate="2024-12-1T08:00:59" /> */}
-          {/* where date can be fixed so probs can be passed  */}
+
         </div>
       ),
     },

@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import K from '../constant/index';
 import { FiMenu, FiX } from 'react-icons/fi';
+<<<<<<< HEAD
 // import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+=======
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+>>>>>>> 6800382ab44920d6bce2914847269c780424c06e
 import logo from '../assets/images/abf2.png';
 
 const Navbar = ({ activeSection }) => {
@@ -37,7 +42,11 @@ const Navbar = ({ activeSection }) => {
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
+<<<<<<< HEAD
         } md:flex flex-col md:flex-row md:space-x-8 text-lg md:items-center absolute md:static top-16 left-0 right-0 bg-bgColor px-6 md:px-0 py-4 md:py-0`}
+=======
+        } md:flex flex-col md:flex-row md:space-x-8 text-lg bg-[#4F0945] md:items-center absolute md:static top-16 left-0 right-0  px-6 md:px-0 py-4 md:py-0`}
+>>>>>>> 6800382ab44920d6bce2914847269c780424c06e
       >
         <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
           {K.NAVLINKS.map((item) => (
@@ -45,7 +54,9 @@ const Navbar = ({ activeSection }) => {
               <button
                 onClick={() => scrollToSection(item.name.toLowerCase())}
                 className={`py-2 md:py-0 hover:text-white ${
-                  activeSection === item.name.toLowerCase() ? 'underline' : ''
+                  activeSection === item.name.toLowerCase()
+                    ? 'underline decoration-white'
+                    : ''
                 }`}
               >
                 {item.name}
@@ -58,7 +69,7 @@ const Navbar = ({ activeSection }) => {
       {/* Social Media Icons */}
       {/* <div className="hidden md:flex font-nunito text-xl gap-x-4">
         <a
-          href="https://facebook.com"
+          href="https://facebook.com/africabusinessfestival"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#5A138A]"
@@ -66,7 +77,7 @@ const Navbar = ({ activeSection }) => {
           <FaFacebookF className="text-2xl" />
         </a>
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/africabizfest"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-400"
@@ -74,14 +85,26 @@ const Navbar = ({ activeSection }) => {
           <FaTwitter className="text-2xl" />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/africabusinessfestival"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-400"
         >
           <FaInstagram className="text-2xl" />
         </a>
+<<<<<<< HEAD
       </div> */}
+=======
+        <a
+          href="https://www.linkedin.com/company/enzee-group-limited"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-700"
+        >
+          <FaLinkedin className="text-2xl" />
+        </a>
+      </div>
+>>>>>>> 6800382ab44920d6bce2914847269c780424c06e
     </nav>
   );
 };

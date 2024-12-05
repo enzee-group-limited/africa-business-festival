@@ -1,11 +1,12 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/images/abf2.png';
 import React from 'react';
 import { fbIcon, IgIcon, linkedin, twitter } from '../assets';
 
 const Footer = () => {
   return (
-    <div className="bg-bgColor h-auto w-full p-6 text-fontColors">
+    <div className="bg-bgColor h-auto w-full p-6 text-fontColors font-poppins">
       <footer>
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
@@ -17,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   Navigation
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -40,7 +41,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   News Letter
                 </h2>
                 {/* Column 3: News Subscription */}
@@ -60,7 +61,7 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   Legal
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">

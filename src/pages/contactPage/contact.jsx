@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="text-center  font-poppins font-extrabold text-4xl mb-8">
           <h2 className="text-[3rem] md:text-4xl py-10 font-bold">Get in Touch</h2>
           <p className="text-lg md:text-xl mt-2 text-gray-500">
-            Reach out to us via phone, email, or visit our office.
+            Reach out to us through phone, email, or visit our office.
           </p>
         </div>
 
@@ -39,8 +39,12 @@ const Contact = () => {
                 </svg>
               </span>
             </div>
-            <p className="font-semibold">9th Floor, Emporium Building</p>
-            <p>Movenpick Ambassador Hotel, Independence Avenue</p>
+            <p className="font-semibold text-lg md:text-2xl">
+              9th Floor, Emporium Building
+            </p>
+            <p className="text-base md:text-xl">
+              Movenpick Ambassador Hotel, Independence Avenue
+            </p>
           </div>
 
           {/* Phone */}
@@ -63,14 +67,9 @@ const Contact = () => {
                 </svg>
               </span>
             </div>
-            <p className="font-semibold">
+            <p className="font-semibold text-lg md:text-2xl">
               <a href="tel:+233599428555" className="hover:underline">
                 +233 599 428 555
-              </a>
-            </p>
-            <p>
-              <a href="tel:+233302633294" className="hover:underline">
-                +233 302 633 294
               </a>
             </p>
           </div>
@@ -95,17 +94,12 @@ const Contact = () => {
                 </svg>
               </span>
             </div>
-            <p className="font-semibold">
-              <a href="mailto:enzeegroup@gmail.com" className="hover:underline">
-                enzeegroup@gmail.com
-              </a>
-            </p>
-            <p>
+            <p className="font-semibold text-lg md:text-2xl">
               <a
-                href="mailto:eldee.sefadzi@enzeegh.com"
+                href="mailto: info@africabusinessfestival.com"
                 className="hover:underline"
               >
-                eldee.sefadzi@enzeegh.com
+                info@africabusinessfestival.com
               </a>
             </p>
           </div>

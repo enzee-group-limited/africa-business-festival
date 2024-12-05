@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { homePageImgslide1, homePageImgslide2 } from "../../assets";
-import "../../App.css";
+import React, { useState } from 'react';
+import { homePageImgslide1, homePageImgslide2 } from '../../assets';
+import '../../App.css';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
 
 // Import required modules
 import {
@@ -14,6 +14,7 @@ import {
 } from "swiper/modules";
 import WhyUsSection from "./whyUs";
 import Countdown from "./countDown";
+
 
 const Home = () => {
   const [isSliding, setIsSliding] = useState(false);
@@ -37,7 +38,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="relative h-[80vh] bg-bgColor">
+      <div className="relative h-[80vh] bg-bgColor font-poppins">
         {/* Swiper Slider as Hero Background */}
         <Swiper
           modules={[
@@ -45,8 +46,8 @@ const Home = () => {
             // Autoplay
           ]} // Add Autoplay module
           navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
           }}
           slidesPerView={1}
           loop={true} // Enable looping for continuous sliding
