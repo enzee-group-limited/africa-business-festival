@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { homePageImgslide1, homePageImgslide2 } from '../../assets';
+import { hero1, slide2 } from '../../assets';
 import '../../App.css';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -62,7 +62,7 @@ const Home = () => {
           <SwiperSlide>
             <div
               className="h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${homePageImgslide1})` }}
+              style={{ backgroundImage: `url(${hero1})` }}
             >
               {/* Overlay */}
               <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80"></div>
@@ -98,7 +98,7 @@ const Home = () => {
             <div
               className="h-full w-full bg-cover bg-center"
               style={{
-                backgroundImage: `url(${homePageImgslide2})`,
+                backgroundImage: `url(${slide2})`,
               }}
             >
               {/* Overlay */}
@@ -139,7 +139,7 @@ const Home = () => {
             <div
               className="h-full w-full bg-cover bg-center"
               style={{
-                backgroundImage: `url(${homePageImgslide2})`,
+                backgroundImage: `url(${slide2})`,
               }}
             >
               {/* Overlay */}

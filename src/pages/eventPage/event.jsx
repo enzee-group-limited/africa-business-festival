@@ -1,75 +1,67 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
-import { flyer, flyer2 } from '../../assets';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { flyer, flyer2 } from "../../assets";
 
 const Event = () => {
   return (
     <div className="my-10 flex flex-col h-auto px-4 sm:px-8 lg:px-16 mx-auto max-w-7xl font-poppins">
-      <h1 className="text-white flex justify-center text-3xl sm:text-[3rem] py-7 font-courgette font-semibold bg-gradient-to-r from-bgColor to-fontColors">
+    <div className="h-[30rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex items-center justify-center flex-col shadow-lg rounded-lg">
+      <h1 className="text-[3rem] text-fontColors py-6 font-poppins font-extrabold text-4xl">
         EVENTS
       </h1>
+      <div className="text-lg leading-relaxed mb-6 p-4 shadow-2xl">
+        <span className="font-medium text-fontColors text-2xl mb-3 block">
+          What to Expect
+        </span>
+        <ul className="list-none pl-5 space-y-1 text-white">
+          <li>Keynote Speeches</li>
+          <li>Panel Discussions</li>
+          <li>Workshops</li>
+          <li>Networking</li>
+          <li>Business Expo</li>
+        </ul>
+      </div>
+    </div>
+  
 
       {/* Event Details */}
-      <div className="px-4 py-8 text-center">
+      {/* <div className="px-4 py-8 text-center">
         <h2 className="text-3xl font-courgette text-fontColors mb-4">
           Africa Business Festival 2025
-        </h2>
+        </h2> */}
 
-        {/* Date Section */}
-        <div className="mb-6">
+      {/* Date Section */}
+      {/* <div className="mb-6">
           <span className="text-4xl font-bold text-black">Date:</span>
           <p className="text-2xl text-gray-700 italic">Anticipate!!!</p>
-        </div>
+        </div> */}
 
-        {/* Venue Section */}
-        <div className="mb-6">
+      {/* Venue Section */}
+      {/* <div className="mb-6">
           <span className="text-4xl font-bold text-black">Venue:</span>
           <p className="text-2xl text-gray-700 italic">
             A prestigious location in Accra, Ghana — details coming soon!
           </p>
-        </div>
+        </div> */}
 
-        {/* Event Format Section */}
-        <div className="mb-6">
+      {/* Event Format Section */}
+      {/* <div className="mb-6">
           <span className="text-4xl font-bold text-fontColors">
             Event Format:
           </span>
           <p className="text-2xl text-gray-700 italic">
             Hybrid (In-Person and Virtual Participation Available)
           </p>
-        </div>
+        </div> */}
 
-        {/* What to Expect Section */}
-        <div className="text-lg leading-relaxed mb-8 border-2 border-fontColors rounded-lg p-6 shadow-md">
-          <span className="font-bold text-fontColors text-2xl mb-4 block">
-            What to Expect:
-          </span>
-          <ul className="list-none pl-5 space-y-2 text-black">
-            <li>
-              Keynote Speeches: Hear from African leaders and global
-              entrepreneurs.
-            </li>
-            <li>
-              Panel Discussions: Insights into trade, funding, and technology in
-              Africa.
-            </li>
-            <li>Workshops: Gain practical knowledge to grow your business.</li>
-            <li>
-              Networking Sessions: Build valuable relationships with key
-              stakeholders.
-            </li>
-            <li>
-              Business Expo: Discover innovative African startups and
-              established companies showcasing their services.
-            </li>
-          </ul>
-        </div>
-      </div>
+      {/* What to Expect Section */}
+     
+      {/* </div> */}
 
       {/* Image Swiper with Background Color */}
       {/* <div className="bg-gray-800 p-10">
@@ -104,8 +96,8 @@ const Event = () => {
             ))}
         </Swiper>
       </div> */}
-      <div className="bg-gradient-to-r from-bgColor to-[#4F0945]/80 md:p-10">
-        {/* Title and Description */}
+      <div className=" md:p-10">
+        {/* Title and Description
         <div className="text-center text-white mb-8">
           <h2 className="text-4xl font-bold text-fontColors font-courgette mb-4 pt-3">
             Event Flyers
@@ -113,7 +105,7 @@ const Event = () => {
           <p className="text-lg">
             Explore some of the highlights from our event flyers below.
           </p>
-        </div>
+        </div> */}
 
         {/* Swiper */}
         <Swiper
@@ -153,15 +145,28 @@ const Event = () => {
                       alt={`Flyer ${index + 1}`}
                       className="w-full h-full object-cover"
                     />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/70 text-white">
+                      <h4 className="text-lg font-bold">
+                        Innovation Summit 2024
+                      </h4>
+                      <p>March 15, 2024 | Accra Conference Center</p>
+                    </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                   <div className="relative w-full h-[50vh]">
                     <img
                       src={flyer2}
-                      alt={`Flyer 2 ${index + 1}`}
+                      alt={`Flyer2 ${index + 1}`}
                       className="w-full h-full object-cover"
                     />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/70 text-white">
+                      <h4 className="text-lg font-bold">
+                        Innovation Summit 2024
+                      </h4>
+                      <p>March 15, 2024 | Accra Conference Center</p>
+                    </div>
                   </div>
                 </SwiperSlide>
               </React.Fragment>
@@ -170,10 +175,10 @@ const Event = () => {
       </div>
 
       {/* Partnership Section with CTA Background */}
-      <div className="flex flex-col md:flex-row justify-center items-center px-5 my-10 md:px-20 bg-gradient-to-r from-bgColor to-fontColors py-12 rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row justify-center items-center px-5 my-10 md:px-20 bg-gradient-to-r from-bgColor to-[#4F0945]/80 py-12 rounded-lg shadow-lg">
         {/* Text Section */}
         <div className="text-center mb-6 md:mb-0 md:mr-10">
-          <p className="text-white text-xl mb-4 font-semibold">
+          <p className=" text-fontColors text-xl mb-4 font-semibold">
             Don't miss out on this incredible opportunity! Join us in making a
             difference.
           </p>
@@ -187,22 +192,26 @@ const Event = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           {/* Partner Button */}
           <button
-            onClick={() => window.open('https://forms.gle/RiymWA5sQaonNrys8')}
-            className="text-white bg-gradient-to-br from-[#44083C] to-[#44083C] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-medium rounded-lg text-lg px-6 py-3 transition ease-in-out duration-300"
+            class="relative flex h-[50px] w-40 items-center  bg-bgColor bg-opacity-20 backdrop-blur-sm justify-center overflow-hidden  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-fontColors before:duration-500 before:ease-out hover:shadow-fontColors hover:before:h-56 hover:before:w-56"
+            onClick={() => window.open("https://forms.gle/RiymWA5sQaonNrys8")}
+            type="button"
           >
-            BE A PARTNER
+            <span class="relative z-10">PATNER</span>
           </button>
+        </div>
 
-          {/* Register Button */}
+        <div className="flex flex-col items-center my-10 space-y-4">
           <button
-            onClick={() => window.open('https://forms.gle/RiymWA5sQaonNrys8')}
-            className="text-white bg-gradient-to-br from-[#44083C] to-[#44083C] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-medium rounded-lg text-lg px-6 py-3 transition ease-in-out duration-300"
+            class="relative flex h-[50px] w-40 items-center  bg-bgColor bg-opacity-20 backdrop-blur-sm justify-center overflow-hidden  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-fontColors before:duration-500 before:ease-out hover:shadow-fontColors hover:before:h-56 hover:before:w-56"
+            onClick={() => window.open("https://forms.gle/RiymWA5sQaonNrys8")}
+            type="button"
           >
-            REGISTER NOW
+            <span class="relative z-10"> REGISTER NOW</span>
           </button>
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 

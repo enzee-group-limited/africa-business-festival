@@ -9,7 +9,7 @@ const WhyUsSection = () => {
   return (
     <div className=" bg-img  flex justify-evenly flex-col  md:flex-row m-10 h-[90vh] w-full">
       {/* Left Section */}
-      <div className="flex justify-center items-center text-fontColors font-courgette font-extrabold text-4xl md:text-6xl flex-1 p-5">
+      <div className="flex justify-center items-center text-fontColors font-poppins font-extrabold text-4xl md:text-6xl flex-1 p-5">
         WHY US
       </div>
 
