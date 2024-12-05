@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import K from '../constant/index';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+// import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import logo from '../assets/images/abf2.png';
 
 const Navbar = ({ activeSection }) => {
@@ -20,7 +20,7 @@ const Navbar = ({ activeSection }) => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-bgColor to-[#4F0945] text-fontColors px-6 py-4 fixed top-0 left-0 w-full z-50 flex justify-between items-center font-poppins">
+    <nav className="bg-bgColor text-fontColors px-6 py-4 fixed top-0 left-0 w-full z-50 flex justify-between items-center font-poppins">
       {/* Logo Image */}
       <div className="flex items-center">
         <img src={logo} alt="ENZEE (ABF) Logo" className="h-10 w-auto" />
@@ -37,7 +37,7 @@ const Navbar = ({ activeSection }) => {
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
-        } md:flex flex-col md:flex-row md:space-x-8 text-lg md:items-center absolute md:static top-16 left-0 right-0 bg-gradient-to-r from-bgColor to-[#4F0945] px-6 md:px-0 py-4 md:py-0`}
+        } md:flex flex-col md:flex-row md:space-x-8 text-lg md:items-center absolute md:static top-16 left-0 right-0 bg-bgColor px-6 md:px-0 py-4 md:py-0`}
       >
         <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
           {K.NAVLINKS.map((item) => (
@@ -56,7 +56,7 @@ const Navbar = ({ activeSection }) => {
       </div>
 
       {/* Social Media Icons */}
-      <div className="hidden md:flex font-nunito text-xl gap-x-4">
+      {/* <div className="hidden md:flex font-nunito text-xl gap-x-4">
         <a
           href="https://facebook.com"
           target="_blank"
@@ -81,7 +81,7 @@ const Navbar = ({ activeSection }) => {
         >
           <FaInstagram className="text-2xl" />
         </a>
-      </div>
+      </div> */}
     </nav>
   );
 };

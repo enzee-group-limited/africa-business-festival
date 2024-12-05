@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import logo from '../assets/images/abf2.png';
 import React from 'react';
+import { fbIcon, IgIcon, linkedin, twitter } from '../assets';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <img src={logo} className="h-8 me-3" alt="Logo" />
+              <img src={logo} className="h-14 me-3" alt="Logo" />
               {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Logo
               </span> */}
@@ -86,32 +87,43 @@ const Footer = () => {
               </a>
               . All Rights Reserved.
             </span>
-            <div className="flex mt-4 sm:justify-center sm:mt-0 space-x-6">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[#5A138A]"
-              >
-                <FaFacebookF className="text-2xl" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-400"
-              >
-                <FaTwitter className="text-2xl" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-400"
-              >
-                <FaInstagram className="text-2xl" />
-              </a>
-            </div>
+ {/* Social Media Icons */}
+ {/* Social Media Icons */}
+<div className="flex font-nunito text-xl gap-x-4">
+  <a
+    href="https://facebook.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:opacity-80"
+  >
+    <img src={fbIcon} alt="Facebook" className="h-6 w-6" />
+  </a>
+  <a
+    href="https://twitter.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:opacity-80"
+  >
+    <img src={twitter} alt="Twitter" className="h-6 w-6" />
+  </a>
+  <a
+    href="https://instagram.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:opacity-80"
+  >
+    <img src={IgIcon} alt="Instagram" className="h-6 w-6" />
+  </a>
+  <a
+    href="https://linkedin.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:opacity-80"
+  >
+    <img src={linkedin} alt="Linkedin" className="h-6 w-6" />
+  </a>
+</div>
+
           </div>
         </div>
       </footer>

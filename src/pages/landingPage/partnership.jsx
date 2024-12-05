@@ -1,18 +1,20 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
-import { flyer, flyer2 } from '../../assets';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { flyer, flyer2 } from "../../assets";
 
 const Partnership = () => {
   return (
-    <div className="bg-bgColor my-10 flex flex-col h-auto">
-      <span className="text-fontColors flex justify-center text-[3rem] m-10 font-courgette font-semibold">
-        EVENTS
-      </span>
+    <div className=" my-10 flex flex-col  h-auto">
+      <div className="h-[10rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex items-center justify-center flex-col">
+        <span className="text-fontColors flex justify-center text-[3rem] m-10  font-poppins font-extrabold text-4xl ">
+          EVENTS
+        </span>
+      </div>
 
       {/* Image Swiper */}
       <Swiper
@@ -52,15 +54,30 @@ const Partnership = () => {
                     alt={`Flyer ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/80 text-white">
+                    <h4 className="text-lg font-bold">
+                      Innovation Summit 2024
+                    </h4>
+                    <p>Date| Location</p>
+                  </div>
                 </div>
               </SwiperSlide>
+
               <SwiperSlide>
                 <div className="relative w-full h-[50vh]">
                   <img
-                    src={flyer2}
-                    alt={`Flyer 2 ${index + 1}`}
+                    src={flyer}
+                    alt="Flyer for Networking Event"
                     className="w-full h-full object-cover"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent p-4 flex flex-col justify-end">
+                    <h3 className="text-2xl font-bold text-white">
+                      Networking Event
+                    </h3>
+                    <p className="text-white">
+                      Date - Location
+                    </p>
+                  </div>
                 </div>
               </SwiperSlide>
             </React.Fragment>
@@ -70,18 +87,19 @@ const Partnership = () => {
       {/* Partnership Section */}
       <div className="flex flex-col md:flex-row justify-center items-center px-5 my-20 md:px-20">
         <button
-          onClick={() => window.open('https://forms.gle/RiymWA5sQaonNrys8')}
+          class="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-fontColors before:duration-500 before:ease-out hover:shadow-fontColors hover:before:h-56 hover:before:w-56"
+          onClick={() => window.open("https://forms.gle/RiymWA5sQaonNrys8")}
           type="button"
-          className="text-white mx-2 md:mx-10 bg-gradient-to-br from-bgColor to-fontColors hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fontColors dark:focus:ring-fontColors font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-4 md:mb-0"
         >
-          BE A PARTNER
+          <span class="relative z-10"> BE A PARTNER</span>
         </button>
+
         <button
-          onClick={() => window.open('https://forms.gle/RiymWA5sQaonNrys8')}
+          class="relative m-5 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-fontColors before:duration-500 before:ease-out hover:shadow-fontColors hover:before:h-56 hover:before:w-56"
+          onClick={() => window.open("https://forms.gle/RiymWA5sQaonNrys8")}
           type="button"
-          className="text-white mx-2 md:mx-10 bg-gradient-to-br from-bgColor to-fontColors hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fontColors dark:focus:ring-fontColors font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-4 md:mb-0"
         >
-          REGISTER
+          <span class="relative z-10"> REGISTER</span>
         </button>
       </div>
     </div>

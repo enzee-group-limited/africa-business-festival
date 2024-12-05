@@ -5,8 +5,8 @@ const About = () => {
   return (
     <section className="bg-gray-50 relative">
       {/* Header Section */}
-      <div className="h-[14rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex items-center justify-center flex-col">
-        <h1 className="text-[3rem] text-fontColors font-courgette">ABOUT US</h1>
+      <div className="h-[20rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex items-center justify-center flex-col">
+        <h1 className="text-[3rem] text-fontColors py-10 font-poppins font-extrabold text-4xl">ABOUT US</h1>
         <p className="text-lg text-white text-center">
           Welcome to{' '}
           <span className="font-bold text-fontColors">
@@ -18,9 +18,10 @@ const About = () => {
 
       {/* Main Content Section */}
       <div className="flex flex-col lg:flex-row items-start px-6 lg:px-16 py-16 mx-auto max-w-7xl">
-        {/* Left Section - Paragraph */}
-        <div className="flex-1 text-gray-700 text-lg leading-relaxed lg:pr-12">
-          <p>
+  {/* Left Section - Centered Paragraph */}
+  <div className="flex-1 text-gray-700 text-lg leading-relaxed lg:pr-12 text-center">
+    <p className="mx-auto">
+          <p className='justify-center'>
             Africa Business Festival, a subsidiary of Enzee Group, is a platform
             for entrepreneurs, creatives, disruptors, business leaders,
             government representatives, academia, and researchers. Africa
@@ -31,10 +32,11 @@ const About = () => {
             entertainment events, they create an atmosphere that ignites
             inspiration and fuels growth.
           </p>
+          </p>
         </div>
 
         {/* Right Section - Grid Content */}
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 -mt-28 relative z-10">
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:-mt-32 md:mt-16 -mt-28 relative z-10">
           {/* Our Mission */}
           <div className="bg-orange-500 text-white p-6 shadow-lg rounded-lg text-center">
             {/* <h3 className="text-lg font-semibold uppercase">Our Mission</h3> */}
@@ -54,10 +56,10 @@ const About = () => {
             </p>
           </div>
 
-          {/* Core Values */}
-          <div className="bg-orange-500 text-white p-6 shadow-lg rounded-lg text-center">
+           {/* Core Values */}
+           <div className="bg-orange-500 text-white p-6 shadow-lg rounded-lg text-center">
             <h3 className="text-lg font-semibold uppercase">Core Values</h3>
-            <ul className="mt-4 list-disc list-inside">
+            <ul className="mt-4 space-y-2">
               <li>Innovation</li>
               <li>Collaboration</li>
               <li>Integrity</li>
@@ -68,35 +70,19 @@ const About = () => {
           {/* Key Services */}
           <div className="bg-orange-500 text-white p-6 shadow-lg rounded-lg text-center">
             <h3 className="text-lg font-semibold uppercase">Key Services</h3>
-            <p className="mt-4">
-              - Networking events
-              <br />
-              - Business workshops
-              <br />
-              - Investment opportunities
-              <br />- Panel discussions with experts
-            </p>
+            <ul className="mt-4 space-y-2">
+              <li>Networking events</li>
+              <li>Business workshops</li>
+              <li>Investment opportunities</li>
+              <li>Panel discussions with experts</li>
+            </ul>
           </div>
         </div>
       </div>
 
       {/* Services Section */}
-      <div className="bg-white ">
-        {/* Video Section */}
-
-        <div className="relative">
-          <video
-            className="w-full h-[20rem] md:h-[25rem] lg:h-[30rem] object-cover"
-            controls
-            autoplay
-            loop
-            muted
-            poster="video-poster.jpg" // Optional placeholder image
-          >
-            <source src={vid} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      
+      
 
         {/* Image and Heading Section Below Video */}
         <div className="relative">
@@ -111,7 +97,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
