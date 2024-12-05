@@ -10,23 +10,24 @@ import { flyer, flyer2 } from "../../assets";
 const Event = () => {
   return (
     <div className="my-10 flex flex-col h-auto px-4 sm:px-8 lg:px-16 mx-auto max-w-7xl font-poppins">
-    <div className="h-[30rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex items-center justify-center flex-col shadow-lg rounded-lg">
-      <h1 className="text-[3rem] text-fontColors py-6 font-poppins font-extrabold text-4xl">
-        EVENTS
-      </h1>
-      <div className="text-lg leading-relaxed mb-6 p-4 shadow-2xl">
-        <span className="font-medium text-fontColors text-2xl mb-3 block">
-          What to Expect
-        </span>
-        <ul className="list-none pl-5 space-y-1 text-white">
-          <li>Keynote Speeches</li>
-          <li>Panel Discussions</li>
-          <li>Workshops</li>
-          <li>Networking</li>
-          <li>Business Expo</li>
-        </ul>
-      </div>
+   <div className="h-[20rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex flex-col items-center justify-center shadow-lg rounded-lg">
+  <h1 className="text-[3rem] text-fontColors py-6 font-poppins font-extrabold">
+    EVENTS
+  </h1>
+  <div className=" text-lg leading-relaxed mb-6 p-4 rounded-md shadow-xl">
+    <h2 className="font-medium text-fontColors text-2xl mb-3 text-center">
+      What to Expect
+    </h2>
+    <div className="text-white-900 space-x-4">
+      <span className="inline-block">Keynote Speeches</span>
+      <span className="inline-block">Panel Discussions</span>
+      <span className="inline-block">Workshops</span>
+      <span className="inline-block">Networking</span>
+      <span className="inline-block">Business Expo</span>
     </div>
+  </div>
+</div>
+
   
 
       {/* Event Details */}
