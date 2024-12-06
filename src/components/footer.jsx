@@ -138,7 +138,7 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex font-nunito text-xl gap-x-4">
               <a
-                href="https://facebook.com/your-facebook-username" // Replace with your Facebook profile link
+                href="https://facebook.com/africabusinessfestival" // Facebook profile link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80"
@@ -146,7 +146,7 @@ const Footer = () => {
                 <img src={fbIcon} alt="Facebook" className="h-6 w-6" />
               </a>
               <a
-                href="https://twitter.com/your-twitter-username" // Replace with your Twitter profile link
+                href="https://twitter.com/africabizfest" // Twitter profile link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80"
@@ -154,13 +154,14 @@ const Footer = () => {
                 <img src={twitter} alt="Twitter" className="h-6 w-6" />
               </a>
               <a
-                href="https://instagram.com/your-instagram-username" // Replace with your Instagram profile link
+                href="https://instagram.com/africabusinessfestival" // Instagram profile link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80"
               >
                 <img src={IgIcon} alt="Instagram" className="h-6 w-6" />
               </a>
+
               <a
                 href="https://www.linkedin.com/company/enzeegh/" // Replace with your LinkedIn profile link
                 target="_blank"
