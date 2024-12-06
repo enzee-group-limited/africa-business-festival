@@ -1,10 +1,59 @@
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import logo from '../assets/images/abf2.png';
-import React from 'react';
-import { fbIcon, IgIcon, linkedin, twitter } from '../assets';
+import logo from "../assets/images/abf2.png";
+import React, { useState } from "react";
+import { fbIcon, IgIcon, linkedin, twitter } from "../assets";
 
 const Footer = () => {
+  const [email, setEmail] = useState(""); // State to store email
+  const [message, setMessage] = useState(""); // State to store status message
+  const [loading, setLoading] = useState(false); // State to show loading
+
+  // Enhanced email validation with regex
+  const validateEmail = (email) => {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return regex.test(email);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    // Validate email
+    if (!email || !validateEmail(email)) {
+      setMessage("Please enter a valid email address.");
+      setLoading(false);
+      return;
+    }
+
+    // Google Suscription action URL
+    const formActionUrl =
+      "https://docs.google.com/forms/d/e/1FAIpQLSd3VhnV0gHgX9FzsyKbfPbBBwExgakgsb5mnth9zpwZmnVfIuQ/formResponse"; // Your Google Form URL
+
+    // Google Suscription action URL
+    const emailFieldName = "entry.2005620554"; // Replace this with the actual entry name of your email field
+
+    const formData = new FormData();
+    formData.append(emailFieldName, email);
+
+    try {
+      const response = await fetch(formActionUrl, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setMessage("Thank you for subscribing!");
+        setEmail(""); // Reset email input
+      } else {
+        setMessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setMessage("There was an error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="bg-bgColor h-auto w-full p-6 text-fontColors font-poppins">
       <footer>
@@ -12,19 +61,17 @@ const Footer = () => {
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <img src={logo} className="h-14 me-3" alt="Logo" />
-              {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Logo
-              </span> */}
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
+            {/* Using flex to align and distribute space between both sections */}
+            <div className="flex w-full justify-between gap-8">
+              <div className="w-1/2">
                 <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
                   Navigation
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://forms.gle/RiymWA5sQaonNrys8"
+                      href="https://forms.gle/aVgxpmVhVW9Zg4W49"
                       className="hover:underline"
                     >
                       Sponsor / Partner
@@ -32,99 +79,98 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://forms.gle/RiymWA5sQaonNrys8"
+                      href="https://forms.gle/Rdw2vaEJZu46pFiK9"
                       className="hover:underline"
                     >
-                      Register
+                      Register to Attend
                     </a>
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="w-full md:w-1/2">
                 <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
-                  News Letter
+                  Newsletter
                 </h2>
-                {/* Column 3: News Subscription */}
-                <div className="flex flex-col">
-                  {/* Subscription Heading */}
-                  {/* Input Field and Button */}
-                  <div className="flex flex-col space-y-2">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      className="p-2 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
-                    />
-                    <button className="p-2 bg-[#6A1B9A] text-white rounded hover:bg-[#5A138A]">
-                      Subscribe
-                    </button>
-                  </div>
+                <div className="flex flex-col space-y-2">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="p-2 rounded bg-white text-black placeholder-gray-500 focus:outline-none"
+                    disabled={loading}
+                  />
+                  <button
+                    onClick={handleSubmit}
+                    className="p-2 bg-[#6A1B9A] text-white rounded hover:bg-[#5A138A]"
+                    disabled={loading}
+                  >
+                    {loading ? "Subscribing..." : "Subscribe"}
+                  </button>
+                  {message && <div className="mt-2 text-sm">{message}</div>}
                 </div>
-              </div>
-              <div>
-                <h2 className="mb-6 text-lg font-semibold text-fontColors uppercase dark:text-white">
-                  Legal
-                </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <a href="#" className="hover:underline">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2024{' '}
-              <a href="" className="hover:underline">
-                Your Company
+              © 2024{" "}
+              <a
+                href="https://github.com/bethheal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                LiT
+              </a>{" "}
+              <a
+                href="https://github.com/RuthNyankum"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Ruth
               </a>
               . All Rights Reserved.
             </span>
- {/* Social Media Icons */}
- {/* Social Media Icons */}
-<div className="flex font-nunito text-xl gap-x-4">
-  <a
-    href="https://facebook.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:opacity-80"
-  >
-    <img src={fbIcon} alt="Facebook" className="h-6 w-6" />
-  </a>
-  <a
-    href="https://twitter.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:opacity-80"
-  >
-    <img src={twitter} alt="Twitter" className="h-6 w-6" />
-  </a>
-  <a
-    href="https://instagram.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:opacity-80"
-  >
-    <img src={IgIcon} alt="Instagram" className="h-6 w-6" />
-  </a>
-  <a
-    href="https://linkedin.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:opacity-80"
-  >
-    <img src={linkedin} alt="Linkedin" className="h-6 w-6" />
-  </a>
-</div>
 
+            {/* Social Media Icons */}
+            <div className="flex font-nunito text-xl gap-x-4">
+              <a
+                href="https://facebook.com/africabusinessfestival" // Facebook profile link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <img src={fbIcon} alt="Facebook" className="h-6 w-6" />
+              </a>
+              <a
+                href="https://twitter.com/africabizfest" // Twitter profile link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <img src={twitter} alt="Twitter" className="h-6 w-6" />
+              </a>
+              <a
+                href="https://instagram.com/africabusinessfestival" // Instagram profile link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <img src={IgIcon} alt="Instagram" className="h-6 w-6" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/enzeegh/" // Replace with your LinkedIn profile link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <img src={linkedin} alt="LinkedIn" className="h-6 w-6" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
