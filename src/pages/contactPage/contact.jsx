@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -6,7 +7,9 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Heading */}
         <div className="text-center  font-poppins font-extrabold text-4xl mb-8">
-          <h2 className="text-[3rem] md:text-4xl py-10 font-bold">Get in Touch</h2>
+          <h2 className="text-[3rem] md:text-4xl py-10 font-bold">
+            Get in Touch
+          </h2>
           <p className=" md:text-xl m-2 font-light text-white">
             Reach out to us through phone, email, or visit our office.
           </p>
@@ -18,32 +21,18 @@ const Contact = () => {
           <div>
             <div className="flex justify-center mb-4">
               <span className="bg-white text-purple-500 p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 2c3.866 0 7 3.134 7 7 0 5.25-7 13-7 13S5 14.25 5 9c0-3.866 3.134-7 7-7z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 10a2 2 0 100-4 2 2 0 000 4z"
-                  />
-                </svg>
+                <FaMapMarkerAlt className="w-6 h-6" />
               </span>
             </div>
             <p className="text-base md:text-xl font-medium ">
-              9th Floor, Emporium Building
-            </p>
-            <p className="text-base md:text-xl font-medium ">
-              Movenpick Ambassador Hotel, Independence Avenue
+              <a
+                href="https://maps.app.goo.gl/5TzuBp1bigQa2Jzp7?g_st=atm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                9th Floor, Emporium Building, Movenpick Ambassador Hotel,
+                Independence Avenue, Accra, Ghana
+              </a>
             </p>
           </div>
 
@@ -51,20 +40,7 @@ const Contact = () => {
           <div>
             <div className="flex justify-center mb-4">
               <span className="bg-white text-purple-500 p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28c.356 0 .695.14.94.385l2.244 2.243a2 2 0 00.94.386H15.6c.314 0 .617.123.845.343l3.154 3.154c.22.22.343.53.343.845v1.886c0 .314-.123.617-.343.845l-4.02 4.02a4.5 4.5 0 01-6.364 0L5 15a2 2 0 01-.586-1.414V6a2 2 0 01.586-1.414z"
-                  />
-                </svg>
+                <FaPhone className="w-6 h-6" />
               </span>
             </div>
             <p className="text-base md:text-xl font-medium ">
@@ -78,20 +54,7 @@ const Contact = () => {
           <div>
             <div className="flex justify-center mb-4">
               <span className="bg-white text-purple-500 p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16.5 10.5c0 1.933-2.686 3.5-6 3.5s-6-1.567-6-3.5M12 3C9.015 3 6.5 4.879 6.5 7.2c0 2.62 5.214 5.8 5.214 5.8s5.214-3.18 5.214-5.8C17.214 4.879 14.985 3 12 3zm0 6a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"
-                  />
-                </svg>
+                <FaEnvelope className="w-6 h-6" />
               </span>
             </div>
             <p className="text-base md:text-xl font-medium ">

@@ -1,13 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import img from '../../assets/images/hero3.jpg'; // Correctly using the image
+import img from '../../assets/images/enzee.jpg';
 
 const About = () => {
   return (
     <div className="font-poppins">
       {/* Header Section */}
       <div className="h-[20rem] bg-gradient-to-r from-bgColor to-[#4F0945] flex items-center justify-center flex-col">
-        <h1 className="text-[3rem] text-fontColors py-10 font-poppins font-extrabold text-4xl">ABOUT US</h1>
+        <h1 className="text-[3rem] text-fontColors py-10 font-poppins font-extrabold text-4xl">
+          ABOUT US
+        </h1>
         <p className="text-lg text-white text-center">
           Welcome to{' '}
           <span className="font-bold text-fontColors">
