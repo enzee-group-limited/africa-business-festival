@@ -8,12 +8,10 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const WhyUsSection = () => {
   return (
     <div className=" flex justify-evenly  flex-col md:flex-row h-[15vh] sm:h-[10vh] md:h-[20vh] w-full my-5">
-      {/* Left Section */}
       <div className="flex justify-center items-center text-fontColors   font-poppins font-extrabold text-4xl md:text-6xl flex-1">
         WHY US
       </div>
 
-      {/* Right Section (Slider) */}
       <div className="flex-1 flex justify-center items-center text-4xl">
         <Swiper
           spaceBetween={30}

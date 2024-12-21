@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import K from "../constant/index";
-import { FiMenu, FiX } from "react-icons/fi";
+import React, { useState } from 'react';
+import K from '../constant/index';
+import { FiMenu, FiX } from 'react-icons/fi';
 // import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 // import { FaLinkedin } from "react-icons/fa";
-import logo from "../assets/images/abf2.png";
-import "../App.css"
-
+import logo from '../assets/images/abf2.png';
+import '../App.css';
 
 const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +16,7 @@ const Navbar = ({ activeSection }) => {
   const scrollToSection = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
     setIsOpen(false); // Close the menu after clicking
   };
@@ -39,7 +38,7 @@ const Navbar = ({ activeSection }) => {
       {/* Navigation Links */}
       <div
         className={`${
-          isOpen ? "block" : "hidden"
+          isOpen ? 'block' : 'hidden'
         } md:flex flex-col md:flex-row md:space-x-8 text-lg md:items-center absolute md:static top-16 left-0 right-0 bg-bgColor px-6 md:px-0 py-4 md:py-0`}
       >
         <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
@@ -49,8 +48,8 @@ const Navbar = ({ activeSection }) => {
                 onClick={() => scrollToSection(item.name.toLowerCase())}
                 className={`py-2 md:py-0 hover:text-white relative ${
                   activeSection === item.name.toLowerCase()
-                    ? "underline-active"
-                    : ""
+                    ? 'underline-active'
+                    : ''
                 }`}
               >
                 {item.name}
@@ -59,8 +58,8 @@ const Navbar = ({ activeSection }) => {
                 <span
                   className={`absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all ${
                     activeSection === item.name.toLowerCase()
-                      ? "w-full h-2 transition-all duration-300"
-                      : "w-0 h-1"
+                      ? 'w-full h-2 transition-all duration-300'
+                      : 'w-0 h-1'
                   }`}
                 />
               </button>

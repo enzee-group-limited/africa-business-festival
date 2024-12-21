@@ -1,11 +1,11 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
-import { flyer, flyer2 } from "../../assets";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+import { flyer } from '../../assets';
 
 const Partnership = () => {
   return (
@@ -16,33 +16,31 @@ const Partnership = () => {
         </span>
       </div>
 
-      {/* Image Swiper */}
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
         autoplay={{
-          delay: 3000, // Set the delay between slides
-          disableOnInteraction: false, // Continue autoplay even after interaction
+          delay: 3000,
+          disableOnInteraction: false,
         }}
-        modules={[FreeMode, Pagination, Autoplay]} // Include Autoplay module
+        modules={[FreeMode, Pagination, Autoplay]}
         className="mb-5 w-full"
         breakpoints={{
           640: {
-            slidesPerView: 2, // 2 slides on small screens
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3, // 3 slides on medium screens
+            slidesPerView: 3,
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 4, // 4 slides on larger screens
+            slidesPerView: 4,
             spaceBetween: 30,
           },
         }}
       >
-        {/* Swiper Slides */}
         {Array(8)
           .fill(0)
           .map((_, index) => (
@@ -74,9 +72,7 @@ const Partnership = () => {
                     <h3 className="text-2xl font-bold text-white">
                       Networking Event
                     </h3>
-                    <p className="text-white">
-                      Date - Location
-                    </p>
+                    <p className="text-white">Date - Location</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -84,11 +80,10 @@ const Partnership = () => {
           ))}
       </Swiper>
 
-      {/* Partnership Section */}
       <div className="flex flex-col md:flex-row justify-center items-center px-5 my-20 md:px-20">
         <button
           class="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-fontColors before:duration-500 before:ease-out hover:shadow-fontColors hover:before:h-56 hover:before:w-56"
-          onClick={() => window.open("https://forms.gle/RiymWA5sQaonNrys8")}
+          onClick={() => window.open('https://forms.gle/RiymWA5sQaonNrys8')}
           type="button"
         >
           <span class="relative z-10"> BE A PARTNER</span>
@@ -96,7 +91,7 @@ const Partnership = () => {
 
         <button
           class="relative m-5 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-fontColors before:duration-500 before:ease-out hover:shadow-fontColors hover:before:h-56 hover:before:w-56"
-          onClick={() => window.open("https://forms.gle/RiymWA5sQaonNrys8")}
+          onClick={() => window.open('https://forms.gle/RiymWA5sQaonNrys8')}
           type="button"
         >
           <span class="relative z-10"> REGISTER</span>
